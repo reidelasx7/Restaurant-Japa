@@ -1,0 +1,205 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 200px;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #013cb9;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #b40000; /* Cor ao passar o mouse */
+}
+
+/* Estilo da seção principal */
+section.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.product {
+    max-width: 28%;
+    flex: 1;
+    margin: 0.5em;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilo das seções */
+section {
+    padding: 2em 0;
+    text-align: center;
+}
+
+section h1, section h2 {
+    margin-bottom: 1em;
+}
+
+section h1 {
+    font-size: 2.5em;
+    color: #a00808;
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #a00808;
+}
+
+/* Estilo da imagem do banner */
+/*img[src*="Banner"] {
+    display: block;
+    width: 100%;
+    height: auto;
+}*/
+.banner{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Estilo da seção de contato */
+#contato {
+    background: #ffffff;
+    padding: 2em;
+}
+
+#contato p {
+    margin: 0.5em 0;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contato label {
+    margin: 0.5em 0 0.2em;
+    font-weight: bold;
+}
+
+#contato input, #contato textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#contato button {
+    background: #000000;
+    color: #fff;
+    border: none;
+    padding: 0.7em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contato button:hover {
+    background: #000000;
+}
+
+/* Estilo do rodapé */
+footer {
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+footer p {
+    margin-bottom: 0.5em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff; /* Ajuste a cor de fundo conforme necessário */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+/* Estilo para o efeito de zoom das imagens dos produtos */
+.product img {
+    transition: transform 0.3s ease; /* Adiciona transição suave para o efeito de zoom */
+}
+section input {
+  width: 17rem;
+  /* Largura total dos inputs em telas pequenas */
+}
+
+section button {
+  padding: 0.6rem 1rem;
+  /* Espaçamento interno do botão em telas pequenas */
+  font-size: 0.9rem;
+  /* Tamanho da fonte do botão em telas pequenas */
+}
+
+.resultados-pesquisa {
+  width: 90%;
+  /* Largura da caixa de resultados em telas pequenas */
+  height: 50vh;
+  /* Altura da caixa de resultados em telas pequenas */
+}
+
+.item-resultado h2 {
+  font-size: 1.1rem;
+  /* Tamanho da fonte dos títulos em telas pequenas */
+}
+
+footer {
+  font-size: 0.9rem;
+  /* Tamanho da fonte do rodapé em telas pequenas */
+}
